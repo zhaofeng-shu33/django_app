@@ -20,10 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-try:
-    from .secret_key import SECRET_KEY
-except ImportError:
-    SECRET_KEY = '123'
+from .secret_key import SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False 
@@ -182,6 +179,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/feng/static/'
-STATICFILES_DIRS = ['/home/feng/DeutschLernen_server/frontend/']
+STATICFILES_DIRS = ['/home/feng/DeutschLernen_server/frontend']
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
